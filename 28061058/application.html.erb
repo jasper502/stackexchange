@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OilfieldTracker v1.0.0</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div>
+	
+<%= render partial: "shared/navbar" %>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+		<div class="panel panel-default account-info">
+		  <div class="panel-body text-center">
+		    Place Holder
+		  </div>
+		</div>	
+	</div>
+    <div class="col-md-10 clearfix">
+		<%= yield :head %>
+	</div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+		<%= render partial: "shared/sidebar", flash: flash %>
+	</div>
+    <div class="col-md-10">
+		<%= render partial: "shared/flash" %>
+		<%= yield %>
+	</div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
