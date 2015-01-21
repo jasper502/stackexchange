@@ -1,0 +1,147 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+
+/*** FONTS ***/
+
+/* 
+
+It seems you need to load font awesome and the fonts first then
+
+http://stackoverflow.com/questions/11778097/unable-to-overwrite-bootstrap-sasss-font-with-that-of-font-awesome
+
+*/
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700);
+
+/*** BOOTSTRAP ***/
+
+
+/* Needs to load first to overide the default CSS */
+
+@import "bootstrap_custom";
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "timeline";
+
+
+/* kill the brand hover */
+
+.navbar-inverse .navbar-brand,
+a.navbar-inverse a.navbar-brand {
+    color: #FFFFFF;
+}
+
+/* Red badge color */
+
+.badge {
+
+    background-color: #d9534f;
+
+}
+
+/* Clean up the headers */
+
+h1, .h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 5px 0 20px;
+    border-bottom: 1px solid #eee
+}
+
+/*** Dashboard Wigets ***/
+
+.huge {
+    font-size: 40px;
+}
+
+.panel-green {
+    border-color: #5cb85c;
+}
+
+.panel-green .panel-heading {
+    border-color: #5cb85c;
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.panel-green a {
+    color: #5cb85c;
+}
+
+.panel-green a:hover {
+    color: #3d8b3d;
+}
+
+.panel-red {
+    border-color: #d9534f;
+}
+
+.panel-red .panel-heading {
+    border-color: #d9534f;
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.panel-red a {
+    color: #d9534f;
+}
+
+.panel-red a:hover {
+    color: #b52b27;
+}
+
+.panel-yellow {
+    border-color: #f0ad4e;
+}
+
+.panel-yellow .panel-heading {
+    border-color: #f0ad4e;
+    color: #fff;
+    background-color: #f0ad4e;
+}
+
+.panel-yellow a {
+    color: #f0ad4e;
+}
+
+.panel-yellow a:hover {
+    color: #df8a13;
+}
+
+.panel-blue {
+    border-color: #337ab7;
+}
+
+.panel-blue .panel-heading {
+    border-color: #337ab7;
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.panel-blue a {
+    color: #337ab7;
+}
+
+.panel-blue a:hover {
+    color: #337ab7;
+}
+
